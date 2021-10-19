@@ -183,9 +183,23 @@ a.btn-down {
 	color:#fff;
 	border:2px solid #fff;
 	padding:5% 10%;
-	position: relative;
-	top: 35px;
+	
 	font-size: 17px;
+}
+.butn {
+	margin-top: 25px;
+	color:#fff;
+	background-color: #0044c4 ;
+	border:2px solid #fff;
+	font-size: 17px;
+}
+.butn:hover {
+	background:#fff;
+	color: #0044c4;/*#e73131;*/
+	transition:all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 a.btn-down:hover {
 	background:#fff;
@@ -301,7 +315,7 @@ ul.nav li.active a:before {
 	text-align: left;
 	color: #fff;
 	text-shadow: none;
-	margin-top: -130px;
+	margin-top: -100px;
 }
 .carousel-caption h1 {
 	font-size:35px;
@@ -420,11 +434,23 @@ ul.nav li.active a:before {
 	font-size:13px;
 }
 /*Background-stylesheets-include-here*/
-.bg-sec {
-	background: #0044c4;/*#e73131;*/
-	margin-top:10px;
-	padding: 1% 0%;
-}
+
+@media (max-width: 991px) {
+	.bg-sec {
+		background: #0044c4;/*#e73131;*/
+		margin-top:10px;
+		padding: 1% 0%;
+		height: 220px;
+		justify-content: center;
+	}
+  }
+  @media (min-width: 992px) {
+	.bg-sec {
+		background: #0044c4;/*#e73131;*/
+		margin-top:10px;
+		padding: 1% 0%;
+	}
+  }
 .bg-sec h3 {
 	color:#FFFFFF;
 	text-transform:none;
@@ -1359,7 +1385,25 @@ font-weight:bolder;
 color:#fff;
 }
 .foot{
-	background-color: #0044c4;
+	background-color: #3b3b3b;
 	color: white;
 }
-/*Basic-Stylesheets-End-Here*/
+.obr{
+	padding-top: 5%;
+	max-width: 300px;
+}
+
+@media (min-width: 768px) {
+	.riadok{
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+  }
+  @media (max-width: 767px) {
+	.riadok{
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr;
+	}
+  }
