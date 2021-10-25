@@ -105,12 +105,8 @@ $(document).ready(function() {
 	
 	
  $(window).bind('scroll', function() {
-        var navHeigh = $(window).height() - 100;
-        console.log(navHeigh);
-       // let box = document.querySelector('.home-carousel');
         var box = document.getElementById("home-carousel");
         var navHeight = box.clientHeight;
-        console.log(navHeight);
         if ($(window).scrollTop() > navHeight) {
             $('.navbar').addClass('on');
         } else {
