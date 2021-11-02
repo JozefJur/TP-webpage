@@ -815,6 +815,31 @@ ul.nav li.active a:before {
 #pricing ul.pricing.featured li.plan-header .plan-name {
 	color: #fff;
 }
+/*Dokumenty*/
+.docuBox{
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-bottom: 5%;
+}
+.docuBox:hover {
+	box-shadow: 0 8px 8px rgba(0, 0, 0, .26);
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.docuBox:hover .team-sec {
+	border:1px solid #fff;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.docuBox:hover h5 {
+	color:#0044c4;/*#e73131;*/
+}
 /*Team-stylesheets-include-here*/
 #team {
 	text-align:center;
